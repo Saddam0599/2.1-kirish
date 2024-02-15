@@ -1,0 +1,114 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <div>Hello</div>
+ <button id="deleteButton">Ma'lumotni o'chirish</button>
+
+    <script src="./main.js"></script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>localStorage Ma'lumotni O'chirish</title>
+</head>
+<body>
+
+  HTML
+  <button id="deleteButton">Ma'lumotni o'chirish</button>
+
+  JavaScript
+  <script>
+    document.getElementById('deleteButton').addEventListener('click', function() {
+      localStorage dan ma'lumotni o'chiramiz
+      localStorage.removeItem('kantinerMa`lumoti');
+
+      Qo'shimcha: Boshqa kerakli amallar ham bajarilishi mumkin
+      Misol: Sahifani qayta yuklash
+      location.reload();
+    });
+  </script>
+
+</body>
+</html> -->
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>localStorage Ma'lumotni O'chirish</title>
+</head>
+<body>
+
+
+  <button id="deleteButton">Ma'lumotni o'chirish</button>
+
+
+  <script>
+    document.getElementById('deleteButton').addEventListener('click', function() {
+      // localStorage dan ma'lumotni o'chiramiz
+      localStorage.removeItem('kantinerMa`lumoti');
+
+      // Qo'shimcha: Boshqa kerakli amallar ham bajarilishi mumkin
+      // Misol: Sahifani qayta yuklash
+      location.reload();
+    });
+  </script>
+
+</body>
+</html>
+
+
+
+
+// // JavaScript
+// document.getElementById("deleteButton").addEventListener("click", function () {
+//   // localStorage dan ma'lumotni o'chiramiz
+//   localStorage.removeItem("kantinerMa`lumoti");
+
+//   // Qo'shimcha: Boshqa kerakli amallar ham bajarilishi mumkin
+//   // Misol: Sahifani qayta yuklash
+//   location.reload();
+// });
+
+
+function editItem(itemId) {
+  // Ro'yxatdan tahrirlanayotgan elementni qidirish
+  var itemToEdit = todos.find(function (todo) {
+    return todo.id === itemId;
+  });
+
+  // Foydalanuvchidan yangi qiymatni so'raymiz
+  var newItemValue = prompt("Yangi qiymatni kiriting:", itemToEdit.qiymat);
+
+  // Foydalanuvchi yangi qiymat kiritganda
+  if (newItemValue !== null) {
+    // Ro'yxatdagi elementni yangilash
+    itemToEdit.qiymat = newItemValue;
+
+    // Ro'yxatni yangilab qo'yish
+    setLocalStorage(todos);
+
+    // Sahifani qayta yuklash
+    window.location.reload();
+  }
+} -->
+
+
+
+
+
+

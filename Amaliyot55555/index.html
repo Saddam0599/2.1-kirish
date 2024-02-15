@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="./sass/pages/nav-footer.css" />
+    <link rel="stylesheet" href="./sass/pages/home.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#">
+            <img
+              style="width: 152px; height: 32px"
+              src="./img/Logo.svg"
+              alt="Logo"
+            />
+          </a>
+        </div>
+        <input type="radio" name="slider" id="menu-btn" />
+        <input type="radio" name="slider" id="close-btn" />
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn">
+            <i class="fa-solid fa-x"></i>
+          </label>
+          <li>
+            <div class="hov">
+              <div>
+                <a href="#" class="desktop-item">
+                  <img src="./img/menu.svg" alt="menu"/>
+                </a>
+              </div>
+              <div class="piii">
+                <a href="/kategori">Каталог</a>
+              </div>
+            </div>
+            <input type="checkbox" id="showMega" />
+            <label for="showMega" class="mobile-item">Mega Menu</label>
+            <div class="mega-box">
+              <div class="content">
+                <div class="row">
+                  <header>Design Services</header>
+                  <ul class="mega-links">
+                    <br /><br />
+                    <li><a href="#">Молоко, сыр, яйцо</a></li>
+                    <li><a href="#">Хлеб</a></li>
+                    <li><a href="#">Фрукты и овощи</a></li>
+                    <li><a href="#">Замороженные продукты</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Email Services</header>
+                  <ul class="mega-links">
+                    <br /><br />
+                    <li><a href="#">Напитки</a></li>
+                    <li><a href="#">Кондитерские изделия</a></li>
+                    <li><a href="#">Чай, кофе</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>Security services</header>
+                  <ul class="mega-links">
+                    <br /><br />
+                    <li><a href="#">Бакалея</a></li>
+                    <li><a href="#">Здоровое питание</a></li>
+                    <li><a href="#">Зоотовары</a></li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <header>lorem</header>
+                  <ul class="mega-links">
+                    <br /><br />
+                    <li><a href="#">Непродовольственные товары</a></li>
+                    <li><a href="#">Детское питание</a></li>
+                    <li><a href="#">Мясо, птица, колбаса</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="center">
+          <div class="fl"></div>
+          <div class="urta">
+            <div class="urta2">
+              <input type="text" placeholder="Найти товар" />
+            </div>
+            <div class="search">
+              <img src="./img/search.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="con">
+          <div>
+            <img src="./img/icon-1.png" alt="" />
+            <p>Избранное</p>
+          </div>
+          <div class="u">
+            <img src="./img/icon-2.png" alt="" />
+            <p>продукты</p>
+          </div>
+          <div>
+            <img src="./img/icon-3.png" alt="" />
+            <p>Корзина</p>
+          </div>
+        </div>
+
+        <div
+          class="overlay"
+          id="modal01"
+          onclick="Modal.close(event)"
+          data-backdrop=""
+          data-modal-close=""
+        >
+          <section class="modal">
+            <header class="modal--header">
+              <div
+                class="button"
+                data-type="icon"
+                onclick="Modal.close(event)"
+                data-modal-close=""
+              >
+                <svg
+                  class="icon icon-clear"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                  ></path>
+                </svg>
+              </div>
+            </header>
+            <div class="modal--content">
+              <h2>Вход</h2>
+              <div class="input">
+                <label for="">Телефон</label>
+                <input type="text" placeholder="+7 912" />
+              </div>
+              <div class="vxod">
+                <button>Вход</button>
+              </div>
+              <div class="pas">
+                <div class="bu">
+                  <button>Регистрация</button>
+                </div>
+                <div>
+                  <a href="#">Забыли пароль?</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="sec">
+          <div class="aaa">
+            <button onclick="Modal.open('#modal01')">
+              <img src="./img/avatar.png" alt="" />
+            </button>
+          </div>
+          <select name="" id="">
+            <option value="Алексей">Алексей</option>
+            <option value="Алексей">Алексей 1</option>
+            <option value="Алексей">Алексей 2</option>
+          </select>
+        </div>
+        <label for="menu-btn" class="btn menu-btn"
+          ><i class="fas fa-bars"></i
+        ></label>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <main>
+      <div class="section1">
+        <div class="fleks container">
+          <div>
+            <img src="./img/img.png" alt="" />
+          </div>
+          <div>
+            <h2>Доставка бесплатно от 1000 ₽</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="section2 container">
+        <div class="aktsi">
+          <div>
+            <h1>Акции</h1>
+          </div>
+          <div class="aktsi2">
+            <div>
+              <p>Все продукты</p>
+            </div>
+            <div>
+              <img src="./img/right.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cardlar">
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-1.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+              <img class="ellik" src="./img/ellik.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="pi">
+                <div>
+                  <p class="raqam">44,50 ₽</p>
+                  <p class="c">С картой</p>
+                </div>
+                <div>
+                  <p class="raqam__2">50,50 ₽</p>
+                  <p class="c">Обычная</p>
+                </div>
+              </div>
+              <p class="g">Г/Ц Блинчики с мясом вес, Россия</p>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-2.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+              <img class="ellik" src="./img/ellik.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="pi">
+                <div>
+                  <p class="raqam">44,50 ₽</p>
+                  <p class="c">С картой</p>
+                </div>
+                <div>
+                  <p class="raqam__2">50,50 ₽</p>
+                  <p class="c">Обычная</p>
+                </div>
+              </div>
+              <p class="g">Г/Ц Блинчики с мясом вес, Россия</p>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-3.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+              <img class="ellik" src="./img/ellik.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="pi">
+                <div>
+                  <p class="raqam">44,50 ₽</p>
+                  <p class="c">С картой</p>
+                </div>
+                <div>
+                  <p class="raqam__2">50,50 ₽</p>
+                  <p class="c">Обычная</p>
+                </div>
+              </div>
+              <p class="g">Г/Ц Блинчики с мясом вес, Россия</p>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-3.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+              <img class="ellik" src="./img/ellik.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="pi">
+                <div>
+                  <p class="raqam">44,50 ₽</p>
+                  <p class="c">С картой</p>
+                </div>
+                <div>
+                  <p class="raqam__2">50,50 ₽</p>
+                  <p class="c">Обычная</p>
+                </div>
+              </div>
+              <p class="g">Г/Ц Блинчики с мясом вес, Россия</p>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section2 container">
+        <div class="aktsi">
+          <div>
+            <h1>Новинки</h1>
+          </div>
+          <div class="aktsi2">
+            <div>
+              <p>Все продукты</p>
+            </div>
+            <div>
+              <img src="./img/right.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cardlar">
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-4.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="novinki">
+                <h4>599,99 ₽</h4>
+                <p class="kombayn">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+              </div>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-3.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="novinki">
+                <h4>599,99 ₽</h4>
+                <p class="kombayn">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+              </div>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-3.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="novinki">
+                <h4>599,99 ₽</h4>
+                <p class="kombayn">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+              </div>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-2.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="novinki">
+                <h4>599,99 ₽</h4>
+                <p class="kombayn">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+              </div>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section2 container">
+        <div class="aktsi">
+          <div>
+            <h1>Покупали раньше</h1>
+          </div>
+          <div class="aktsi2">
+            <div>
+              <p>Все продукты</p>
+            </div>
+            <div>
+              <img src="./img/right.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="cardlar">
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-5.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="novinki">
+                <h4>599,99 ₽</h4>
+                <p class="kombayn">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+              </div>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-3.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="novinki">
+                <h4>599,99 ₽</h4>
+                <p class="kombayn">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+              </div>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-4.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="novinki">
+                <h4>599,99 ₽</h4>
+                <p class="kombayn">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+              </div>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="card__1">
+            <div class="rasm">
+              <img class="taom" src="./img/taom-2.png" alt="" />
+              <img class="like" src="./img/like.png" alt="" />
+            </div>
+            <div class="bottom">
+              <div class="novinki">
+                <h4>599,99 ₽</h4>
+                <p class="kombayn">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
+              </div>
+              <div class="star">
+                <div>
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-r.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+                <div class="star__l">
+                  <img src="./img/star-y.png" alt="" />
+                </div>
+              </div>
+              <div class="button">
+                <a href="#"><button>В корзину</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__3 container">
+        <div>
+          <h2>Специальные предложения</h2>
+        </div>
+        <br /><br />
+        <div class="card2">
+          <div class="card__21">
+            <div>
+              <h3>Оформите карту «Северяночка»</h3>
+              <p>И получайте бонусы при покупке в магазинах и на сайте</p>
+            </div>
+            <div>
+              <img src="./img/severyanochka.png" alt="" />
+            </div>
+          </div>
+          <div class="card__22">
+            <div>
+              <h3>Оформите карту «Северяночка»</h3>
+              <p>И получайте бонусы при покупке в магазинах и на сайте</p>
+            </div>
+            <div>
+              <img src="./img/severyanochka2.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__4 container">
+        <div>
+          <h2>Наши магазины</h2>
+        </div>
+        <div class="ap-tab">
+          <ul class="ap-tab-list">
+            <li class="ap-tab-item">
+              <a class="ap-tab-link active-tab" href="#"
+                ><button>п.Щельяюр</button></a
+              >
+            </li>
+            <li class="ap-tab-item leff">
+              <a class="ap-tab-link" href="#"><button>д.Вертеп</button></a>
+            </li>
+            <li class="ap-tab-item leff">
+              <a class="ap-tab-link" href="#"><button>с.Краснобор</button></a>
+            </li>
+            <li class="ap-tab-item leff">
+              <a class="ap-tab-link" href="#"><button>д.Диюр</button></a>
+            </li>
+          </ul>
+        </div>
+        <div class="ap-tab-container">
+          <div class="ap-tab-content active-tab" style="display: block">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.241046619438!2d53.39292344257714!3d65.32265801271517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4472340bbf53f20d%3A0x6aaf90d406ef7886!2z0KnQtdC70YzRj9GO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2s!4v1685563278815!5m2!1sru!2s"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="ap-tab-content" style="display: none">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44304.24494070279!2d53.21864673077242!3d65.28990300016265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447249e2718cd461%3A0x25c0f625da4e30ed!2z0JLQtdGA0YLQtdC_LCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e0!3m2!1sru!2s!4v1685563321149!5m2!1sru!2s"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="ap-tab-content" style="display: none">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6670.818461837035!2d53.27960234423194!3d65.29224011758298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235dd2ca590b3%3A0xc633232da326cfaf!2z0JrRgNCw0YHQvdC-0LHQvtGALCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e0!3m2!1sru!2s!4v1685563342630!5m2!1sru!2s"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="ap-tab-content" style="display: none">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6675.024253056821!2d53.34835119421984!3d65.27561807306316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235aa69816fb7%3A0x7202220934f2d943!2z0JTQuNGO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGPLCAxNjk0NzE!5e0!3m2!1sru!2s!4v1685563366290!5m2!1sru!2s"
+              width="100%"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="section__5 container">
+        <div class="aktsi">
+          <div>
+            <h1>Статьи</h1>
+          </div>
+          <div class="aktsi2">
+            <div>
+              <p>Все продукты</p>
+            </div>
+            <div>
+              <img src="./img/right.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="uch__card">
+          <div class="bir-card">
+            <div class="top">
+              <img src="./img/img-1.png" alt="" />
+            </div>
+            <div class="bottom">
+              <p class="a">05.03.2021</p>
+              <h4>
+                Режим использования масок и перчаток на территории магазинов
+              </h4>
+              <p class="b">
+                Подробная информация о режимах использования масок и перчаток на
+                территории магазинов "ЛЕНТА". Информация обновляется каждый
+                будний день.
+              </p>
+              <button>Подробнее</button>
+            </div>
+          </div>
+          <div class="bir-card">
+            <div class="top">
+              <img src="./img/img-2.png" alt="" />
+            </div>
+            <div class="bottom">
+              <p class="a">05.03.2021</p>
+              <h4>
+                Режим использования масок и перчаток на территории магазинов
+              </h4>
+              <p class="b">
+                Подробная информация о режимах использования масок и перчаток на
+                территории магазинов "ЛЕНТА". Информация обновляется каждый
+                будний день.
+              </p>
+              <button>Подробнее</button>
+            </div>
+          </div>
+          <div class="bir-card">
+            <div class="top">
+              <img src="./img/img-3.png" alt="" />
+            </div>
+            <div class="bottom">
+              <p class="a">05.03.2021</p>
+              <h4>
+                Режим использования масок и перчаток на территории магазинов
+              </h4>
+              <p class="b">
+                Подробная информация о режимах использования масок и перчаток на
+                территории магазинов "ЛЕНТА". Информация обновляется каждый
+                будний день.
+              </p>
+              <button>Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="futer container">
+        <div class="f-1">
+          <div>
+            <img src="./img/logo2.png" alt="" />
+          </div>
+          <div class="left">
+            <a href="/o-nas">компании</a>
+          </div>
+          <div class="left">
+            <a href="/kontakt">Контакты</a>
+          </div>
+          <div class="left">
+            <a href="/vakansi">Вакансии</a>
+          </div>
+          <div class="left">
+            <a href="/tovar">Статьи</a>
+          </div>
+          <div class="left">
+            <a href="/korzina">Политика обработки персональных данных</a>
+          </div>
+        </div>
+
+        <div class="f-2">
+          <div>
+            <img src="./img/instagram.png" alt="" />
+          </div>
+          <div class="left">
+            <img src="./img/vkontakte.png" alt="" />
+          </div>
+          <div class="left">
+            <img src="./img/facebook.png" alt="" />
+          </div>
+          <div class="left">
+            <img src="./img/ok.png" alt="" />
+          </div>
+        </div>
+
+        <div class="f-3">
+          <div class="f-33">
+            <div>
+              <img src="./img/phone.png" alt="" />
+            </div>
+            <div>
+              <p class="raqam">+998 88 295 51 11</p>
+            </div>
+          </div>
+          <div class="f-33">
+            <div>
+              <p class="dizayn">Дизайн</p>
+            </div>
+            <div>
+              <img src="./img/zasovski.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="container">
+
+
+    <header class="header">
+        <nav class="header-navigation">
+            <div class="header-navigation__list">
+                <div class="header-navigation__list_parent">
+                    <img src="./Images/logo.png" alt="logo.png" class="header-navigation__list_parent-logo">
+                </div>
+
+                <ul class="header-navigation__list-menu">
+                    <li>
+                        <i class="fa-solid fa-bars menu"></i>
+                    </li>
+
+                    <li class="menu-katalog">Каталог</li>
+                </ul>
+
+                <div>
+                    <form action="#">
+                        <div class="search-bar">
+                            <label for="frame">
+                                <input type="text" id="frame" name="frame" placeholder="Найти товар" class="search-bar-input">
+                            </label>
+                            <div class="search-bar-search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+            <ul class="header-navigation__list_nav-item">
+                <li class="nav-item-dropdowns">
+                    <i class="fa-regular fa-heart choices"></i>
+                    <h5 class="choices-shop1">Избранное</h5>
+                </li>
+
+                <li class="nav-item-dropdowns">
+                    <img src="./Images/package.svg" alt="product.png" class="choice">
+                    <h5 class="choices-shop2">продукты</h5>
+                </li>
+
+                <li class="nav-item-dropdowns">
+                    <i class="fa-solid fa-cart-shopping choic"></i>
+                    <h5 class="choices-shop3">Корзина</h5>
+                </li>
+            </ul>
+
+            <ul class="user-auth">
+                <li class="user-auth-img">
+                    <img src="./Images/avatar.png" alt="(user-auth) Алексей avatar.png">
+                </li>
+
+                <li class="user-auth-aleksey">
+                    <h5>Алексей</h5>
+                </li>
+            </ul>
+
+            <div>
+                <form action="/action_page.php">
+                    <label for="cars"></label>
+                    <select id="cars" name="cars">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="fiat">fiat</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <main class="main">
+        <section class="main_section">
+            <div class="main_section-div">
+                <img class="main_section-div-img" src="./Images/Sliders@2x.png" alt="Доставка бесплатно от 1000 ₽, Sliders@2x.png">
+            </div>
+        </section>
+
+        <section class="main_section1">
+            <ul class="main_section1-parent">
+                <li>
+                    <h3 class="main_section1-parent-Акции">Акции</h3>
+                </li>
+
+                <li>
+                    <h5 class="main_section1-parent-product">Все продукты</h5>
+                </li>
+
+                <li>
+                    <img class="main_section1-parent-icon" src="./Images/chevron-right.png" alt="chevron-right.png">
+                </li>
+            </ul>
+
+
+            <ul class="main_section1-ul">
+                <li>
+                    <img src="./Images/bilichniki.png" alt="bilichniki.png">
+                </li>
+
+                <li>
+                    <ul>
+                        <li></li>
+
+                        <li></li>
+                    </ul>
+                </li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>

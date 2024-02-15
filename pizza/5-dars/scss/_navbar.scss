@@ -1,0 +1,187 @@
+.nav_wrapper {
+  width: 100%;
+  background: rgb(245, 245, 245);
+  &_container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_left {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      &_logo {
+        width: 20px;
+        height: 20px;
+      }
+      &_text {
+        display: flex;
+        gap: 2px;
+        font-family: roboto;
+        font-weight: 300;
+        &_span {
+          text-decoration: underline;
+          font-weight: 400;
+          margin-left: 3px;
+        }
+      }
+      &_text:hover {
+        cursor: pointer;
+      }
+      &_tekst {
+        font-family: roboto;
+        font-weight: 300;
+        margin-left: 10px;
+      }
+      &_tekst:hover {
+        cursor: pointer;
+      }
+    }
+    &_center {
+      &_text {
+        font-family: roboto;
+        font-weight: 300;
+        color: gray;
+      }
+      &_text:hover {
+        cursor: pointer;
+      }
+    }
+    &_right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &_flex {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        &_img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.navbar_wrapper {
+  width: 100%;
+  &_container {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+    &_left {
+      margin-right: 40px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      &_logo {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      &_text {
+        color: rgb(75, 75, 219);
+        font-size: 35px;
+        font-family: exo;
+        font-weight: 900;
+      }
+    }
+    &_center {
+      margin-right: 160px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 120px;
+      height: 42px;
+      border: 1px solid;
+      border-radius: 5px;
+      border-color: #fff;
+      background-color: rgb(215, 234, 255);
+      &_text {
+        color: rgb(75, 75, 219);
+        font-family: roboto;
+        margin-left: 26px;
+        margin-top: 6px;
+        font-size: 20px;
+      }
+      &_form {
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        width: 400px;
+        height: 40px;
+        &_input {
+          padding-left: 10px;
+          width: 400px;
+          height: 40px;
+        }
+      }
+      &_btn {
+        border-radius: 0 5px 5px 0;
+        border: none;
+        cursor: pointer;
+        height: 42px;
+        width: 80px;
+        &_img {
+          height: 20px;
+          width: 20px;
+          border: none;
+        }
+        background-color: rgb(243, 243, 243);
+      }
+    }
+    &_right {
+      margin-left: 300px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      &_card {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &_img {
+          width: 25px;
+          height: 25px;
+        }
+        &_text {
+          font-family: roboto;
+        }
+      }
+      &_card:hover {
+        cursor: pointer;
+        background-color: rgb(228, 227, 227);
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.navbarr_wrapper {
+  width: 100%;
+  &_container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+    &_ul{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &_li{
+            font-family: roboto;
+            color: gray;
+        }
+        &_li:hover{
+            color: black;
+            cursor: pointer;
+        }
+    }
+  }
+}

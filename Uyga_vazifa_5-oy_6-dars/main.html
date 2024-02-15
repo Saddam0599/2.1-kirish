@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Magazin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Asosiy sahifa</a></li>
+                <li><a href="#">Mahsulotlar</a></li>
+                <li><a href="#">Katalog</a></li>
+                <li><a href="#">Qidiruv</a></li>
+                <li><a href="#">Kabinet</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="catalog">
+        <h2>Mahsulotlar</h2>
+        <div class="product">
+            <img src="image.jpg" alt="Mahsulot rasmi">
+            <h3>Mahsulot nomi</h3>
+            <p>Narx: $100</p>
+            <button onclick="xaridQilish('Mahsulot nomi', 100)">Xarid qilish</button>
+        </div>
+        <!-- Boshqa mahsulotlar -->
+    </section>
+
+    <section class="contact">
+        <h2>Bog'lanish</h2>
+        <ul>
+            <li>Telefon: +1234567890</li>
+            <li>Elektron pochta: example@example.com</li>
+            <li>Telegram: @example</li>
+            <li>Instagram: @example</li>
+            <li>Facebook: @example</li>
+            <li>YouTube: @example</li>
+        </ul>
+        <div id="map"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Online Magazin</p>
+    </footer>
+
+    <script>
+        // Mahalliy o'zgaruvchilar
+        let tanlanganMahsulotlar = []; // Tanlangan mahsulotlar ro'yxati
+        let yulduzlar = 0; // Tanlangan mahsulotlar sonini sanash uchun
+        let umumiyNarx = 0; // Tanlangan mahsulotlar narxi
+
+        // Tanlov funktsiyasi
+        function xaridQilish(mahsulotNomi, narx) {
+            tanlanganMahsulotlar.push(mahsulotNomi); // Tanlangan mahsulotlarni ro'yxatga qo'shish
+            umumiyNarx += narx; // Umumiy narxni hisoblash
+            yulduzlar += 5; // Yulduzlar sonini oshirish
+
+            // Yurakchalar sonini hisoblash
+            let yurakchalar = tanlanganMahsulotlar.length;
+
+            // Narxlarni hisoblash
+            let narxlar = document.querySelector('.catalog');
+
+            // Mahsulotlar ro'yxatini chiqarish
+            let mahsulotListi = document.createElement('li');
+            mahsulotListi.textContent = mahsulotNomi;
+            narxlar.appendChild(mahsulotListi);
+
+            // Yulduzlar sonini va umumiy narxni chiqarish
+            console.log("Yulduzlar soni: " + yulduzlar);
+            console.log("Umumiy narx: " + umumiyNarx);
+        }
+
+        // Google Maps joylashuvi
+        function initMap() {
+            let options = {
+                zoom: 8,
+                center: { lat: -34.397, lng: 150.644 }
+            };
+            let map = new google.maps.Map(document.getElementById('map'), options);
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

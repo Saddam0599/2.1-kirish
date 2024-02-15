@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topic 5.1: DOM (document object model)</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- bu querySelector methodiga misollar -->
+    <!-- <style>
+    .exampleClass {
+      color: blue;
+    }
+
+    #exampleID {
+      font-weight: bold;
+    }
+  </style> -->
+</head>
+<body>
+
+    <!-- <p>
+        Uyga vazifa muddati:
+
+        31-01-2024 04:00
+
+        Uyga vazifa
+        Fayllar soni: 0
+        DOM == haqida konspekt va toliq organiladi qoshimch aozimiz ham topamiz malumotlar document ==konspekt va 10 ta misol keltiramiz getElementsByTagName ==konspekt va 10 ta misol keltiramiz textContent ==konspekt va 10 ta misol keltiramiz getElementById ==konspekt va 10 ta misol keltiramiz querySelector ==konspekt va 10 ta misol keltiramiz va organganlarimizni localstorage bn birgalikda ishlatib korib organamiz
+        11:50 29.01.2024
+    </p> -->
+
+
+    <!-- <div class="ozgaruvchisi">
+        <button onclick="ozgaruvchisi()">X</button>
+    </div>.kamronjon
+
+    <div id="box"></div>
+    <button onclick="zohidjon()">add</button> -->
+
+
+
+    <!-- <input type="text" name="#" id="value">
+    <button onclick="add()">add</button>
+    <button onclick="rem()">rem</button>
+
+    <h2 id="demo"></h2> -->
+
+
+
+
+
+    <!-- bu getElementsByTagName methodiga misollar -->
+
+    <!-- <p>1 p ga misol</p>
+    <p>2 p ga misol</p>
+    <p>3 p ga misol</p>
+    <br>
+
+    <ul>
+        <li>1 ul ga misol</li>
+        <li>2 ul ga misol</li>
+        <li>3 ul ga misol</li>
+    </ul>
+    <br>
+
+    <ul>
+        <li>1 li ga misol</li>
+        <li>2 li ga misol</li>
+        <li>3 li ga misol</li>
+    </ul>
+    <br>
+
+    <h2>1 h2 ga misol</h2>
+    <h2>2 h2 ga misol</h2>
+    <h2>3 h2 ga misol</h2>
+    <br>
+
+    <div>1 div ga misol</div>
+    <div>2 div ga misol</div>
+    <div>3 div ga misol</div>
+    <br>
+
+    <a href="https://www.npmjs.com">1 www.npmjs.com</a>
+    <a href="https://w3schools.com">2 w3schools.com</a>
+    <a href="https://www.codewars.com">3 codewars.com</a>
+    <br>
+
+    <h1>1 h1 ga misol</h1>
+    <h1>2 h1 ga misol</h1>
+    <h1>3 h1 ga misol</h1>
+    <br>
+
+    <span>span 1 - elementi</span>
+    <span>span 2 - elementi</span>
+    <span>span 3 - elementi</span>
+    <br><br>
+
+    <span class="bodyy">1 body ichidagi teglar va teglar ichidagi elementlar</span>
+    <br>
+
+     <table>
+        <tr>
+            <td>tablega misol: tr tagi ichidagi td tagi: td tagi ichidagi elementi: Row 1, Cell 1</td>
+            <td>tablega misol: tr tagi ichidagi td tagi: td tagi ichidagi elementi: Row 1, Cell 2</td>
+        </tr>
+        <tr>
+            <td>tablega misol: tr tagi ichidagi td tagi: td tagi ichidagi elementi: Row 2, Cell 1</td>
+            <td>tablega misol: tr tagi ichidagi td tagi: td tagi ichidagi elementi: Row 2, Cell 2</td>
+        </tr>
+    </table> -->
+
+<!-- ============================================================================================== -->
+
+
+
+    <!-- bu textContent methodiga misollar -->
+
+  <!-- <div id="exampleDiv1">
+    Bu birinchi matnli div elementidir.
+  </div>
+
+
+  <p id="examplePara1">Bu paragraf elementi ham bor.</p>
+
+
+  <div id="exampleDiv2">
+    Bu ikkinchi matnli div elementidir.
+  </div>
+
+
+  <p id="examplePara2">Yana bir paragraf elementi.</p>
+
+
+  <span id="exampleSpan">Bu span elementi matni.</span>
+
+
+  <h1 id="exampleHeader">Bu sarlavha elementi.</h1>
+
+
+  <div id="exampleDiv3">
+    Bu uchunchi matnli div elementidir.
+  </div>
+
+
+  <p id="examplePara3">Keyingi paragraf elementi.</p>
+
+
+  <h2 id="exampleHeader2">Yana bir sarlavha elementi.</h2>
+
+
+  <div id="exampleDiv4">
+    Bu to'rtinchi matnli div elementidir.
+  </div> -->
+
+  <!-- ============================================================================================== -->
+
+
+
+
+  <!-- bu getElementById metodiga misollar -->
+
+  <!-- <div id="exampleDiv1">
+    Bu birinchi ID bilan identifikatsiya qilinadigan div elementi.
+  </div>
+
+
+  <p id="examplePara1">Bu paragraf elementi ham bor.</p>
+
+
+  <div id="exampleDiv2">
+    Bu ikkinchi ID bilan identifikatsiya qilinadigan div elementi.
+  </div>
+
+
+  <p id="examplePara2">Yana bir paragraf elementi.</p>
+
+
+  <span id="exampleSpan">Bu span elementi matni.</span>
+
+
+  <h1 id="exampleHeader">Bu sarlavha elementi.</h1>
+
+
+  <div id="exampleDiv3">
+    Bu uchunchi ID bilan identifikatsiya qilinadigan div elementi.
+  </div>
+
+
+  <p id="examplePara3">Keyingi paragraf elementi.</p>
+
+
+  <h2 id="exampleHeader2">Yana bir sarlavha elementi.</h2>
+
+
+  <div id="exampleDiv4">
+    Bu to'rtinchi ID bilan identifikatsiya qilinadigan div elementi.
+  </div> -->
+
+  <!-- =============================================================================================== -->
+
+
+  <!-- bu querySelector methodiga misollar -->
+
+  <!-- <p class="exampleClass">Bu birinchi misol.</p>
+
+
+  <div id="exampleID">Bu ikkinchi misol.</div>
+
+
+  <span class="exampleClass">Bu uchunchi misol.</span>
+
+
+  <div id="exampleID2">Bu to'rtinchi misol.</div>
+
+
+  <p class="exampleClass">Bu beshinchi misol.</p>
+
+
+  <div id="exampleID3">Bu oltinchi misol.</div>
+
+
+  <span class="exampleClass">Bu yettinchi misol.</span>
+
+
+  <p class="exampleClass">Bu sakkizinchi misol.</p>
+
+
+  <div id="exampleID4">Bu to'qqizinchi misol.</div>
+
+
+  <span class="exampleClass">Bu o'ninchi misol.</span>
+ -->
+
+
+    <script src="./main.js"></script>
+</body>
+</html>

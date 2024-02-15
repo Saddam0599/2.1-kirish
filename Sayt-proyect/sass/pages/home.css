@@ -1,0 +1,575 @@
+main .section1 {
+  background-image: url(../../img/sec__1.png);
+}
+main .section1 .fleks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+main .section1 .fleks h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #414141;
+  justify-content: center;
+}
+main .section1 img {
+  margin-top: 10px;
+  width: 100%;
+}
+main .section2 {
+  margin-top: 76px;
+  margin-bottom: 40px;
+}
+main .section2 .aktsi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .section2 .aktsi h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+main .section2 .aktsi .aktsi2 {
+  display: flex;
+}
+main .section2 .aktsi .aktsi2 p {
+  cursor: pointer;
+  margin-right: 20px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #606060;
+}
+main .section2 .aktsi .aktsi2 img {
+  cursor: pointer;
+}
+main .section2 .cardlar {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  justify-content: space-between;
+}
+main .section2 .cardlar .card__1 {
+  width: 100%;
+  background-color: white;
+  border-radius: 4px;
+}
+main .section2 .cardlar .card__1 .rasm {
+  position: relative;
+}
+main .section2 .cardlar .card__1 .rasm .taom {
+  width: 100%;
+}
+main .section2 .cardlar .card__1 .rasm .like {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+main .section2 .cardlar .card__1 .rasm .ellik {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+main .section2 .cardlar .card__1 .bottom {
+  padding: 6px;
+}
+main .section2 .cardlar .card__1 .bottom .novinki {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .section2 .cardlar .card__1 .bottom .novinki h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #414141;
+  margin-bottom: 10px;
+}
+main .section2 .cardlar .card__1 .bottom .novinki .kombayn {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+}
+main .section2 .cardlar .card__1 .bottom .pi {
+  display: flex;
+  justify-content: space-between;
+}
+main .section2 .cardlar .card__1 .bottom .pi .raqam {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #414141;
+}
+main .section2 .cardlar .card__1 .bottom .pi .c {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #BFBFBF;
+}
+main .section2 .cardlar .card__1 .bottom .pi .raqam__2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #606060;
+}
+main .section2 .cardlar .card__1 .bottom g {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+}
+main .section2 .cardlar .card__1 .bottom .star {
+  display: flex;
+  margin-bottom: 10px;
+}
+main .section2 .cardlar .card__1 .bottom .star .star__l {
+  margin-left: 5px;
+}
+main .section2 .cardlar .card__1 .bottom .button {
+  width: 100%;
+}
+main .section2 .cardlar .card__1 .bottom .button a {
+  width: 100%;
+  text-decoration: none;
+}
+main .section2 .cardlar .card__1 .bottom .button a button {
+  all: unset;
+  width: 100%;
+  border: 1px solid #70C05B;
+  color: #70C05B;
+  padding: 8px 0px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+main .section2 .cardlar .card__1:hover .button a button {
+  border: 1px solid #FF6633;
+  background-color: #FF6633;
+  color: white;
+}
+main .section__3 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+main .section__3 h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+main .section__3 .card2 {
+  display: flex;
+}
+main .section__3 .card2 .card__21 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FCD5BA;
+  padding: 15px 30px;
+  border-radius: 4px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+main .section__3 .card2 .card__21 h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #414141;
+}
+main .section__3 .card2 .card__21 img {
+  width: 100%;
+}
+main .section__3 .card2 .card__22 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #E5FFDE;
+  padding: 15px 30px;
+  border-radius: 4px;
+  margin-left: 40px;
+}
+main .section__3 .card2 .card__22 h3 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  color: #414141;
+}
+main .section__3 .card2 .card__22 p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+}
+main .section__3 .card2 .card__22 img {
+  width: 100%;
+}
+main .section__4 {
+  margin-bottom: 120px;
+}
+main .section__4 h2 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+  margin-bottom: 24px;
+}
+main .section__4 li {
+  list-style: none;
+}
+main .section__4 a {
+  text-decoration: none;
+}
+main .section__4 .ap-tab button {
+  all: unset;
+  background-color: #F3F2F1;
+  color: #606060;
+  padding: 4px 8px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  align-items: center;
+  text-align: center;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+main .section__4 .ap-tab button:hover {
+  background-color: #70C05B;
+  color: white;
+}
+main .section__4 .ap-tab .ap-tab-list {
+  width: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin-bottom: 24px;
+  gap: 20px;
+}
+main .section__5 .aktsi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main .section__5 .aktsi h1 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  color: #414141;
+}
+main .section__5 .aktsi .aktsi2 {
+  display: flex;
+}
+main .section__5 .aktsi .aktsi2 p {
+  cursor: pointer;
+  margin-right: 20px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #606060;
+}
+main .section__5 .aktsi .aktsi2 img {
+  cursor: pointer;
+}
+main .section__5 .uch__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  justify-content: space-between;
+}
+main .section__5 .uch__card .bir-card {
+  width: 100%;
+  border-radius: 4px;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+main .section__5 .uch__card .bir-card .top {
+  overflow: hidden;
+  margin-top: 0px;
+}
+main .section__5 .uch__card .bir-card .bottom {
+  padding: 6px;
+}
+main .section__5 .uch__card .bir-card img {
+  width: 100%;
+  transition: 0.4s;
+}
+main .section__5 .uch__card .bir-card .a {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #8F8F8F;
+  margin-bottom: 10px;
+}
+main .section__5 .uch__card .bir-card h4 {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: #414141;
+  margin-bottom: 10px;
+}
+main .section__5 .uch__card .bir-card .b {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+  margin-bottom: 15px;
+}
+main .section__5 .uch__card .bir-card button {
+  all: unset;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #E5FFDE;
+  color: #70C05B;
+  transition: 0.3s;
+}
+main .section__5 .uch__card .bir-card:hover button {
+  background-color: #70C05B;
+  color: white;
+}
+main .section__5 .uch__card .bir-card:hover img {
+  transform: scale(1.1);
+}
+
+footer {
+  background-image: url(../../img/footer.png);
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+footer .futer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .futer .f-1 {
+  display: flex;
+  align-items: center;
+}
+footer .futer .f-1 .left {
+  margin-left: 30px;
+  margin-bottom: -10px;
+}
+footer .futer .f-1 .left a {
+  font-family: "Rubik";
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #414141;
+}
+footer .futer .f-1 .left a:hover {
+  cursor: pointer;
+  color: #70C05B;
+}
+footer .futer .f-2 {
+  display: flex;
+  align-items: center;
+}
+footer .futer .f-2 .left {
+  margin-left: 20px;
+}
+footer .futer .f-2 img:hover {
+  cursor: pointer;
+}
+footer .futer .f-3 .f-33 {
+  display: flex;
+}
+footer .futer .f-3 .f-33 .dizayn {
+  margin-right: 10px;
+}
+footer .futer .f-3 .f-33 .raqam {
+  margin-left: 10px;
+  cursor: pointer;
+}
+footer .futer .f-3 .f-33 .raqam:hover {
+  color: #70C05B;
+}
+
+@media (max-width: 1400px) {
+  main .section__4 .abo .maiin .jizzax iframe {
+    width: 370%;
+  }
+}
+@media (max-width: 1200px) {
+  main .section__4 .abo .maiin .jizzax iframe {
+    width: 310%;
+  }
+}
+@media (max-width: 1040px) {
+  main .section__3 .card2 {
+    flex-direction: column;
+  }
+  main .section__3 .card2 .card__22 {
+    margin-left: 5px;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  main .section2 .cardlar {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 992px) {
+  main .section__4 .abo .maiin .jizzax iframe {
+    width: 230%;
+  }
+}
+@media (max-width: 900px) {
+  main .section__5 .uch__card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 850px) {
+  main .section2 .cardlar {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
+  main .section1 .fleks {
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  main .section__4 .abo .maiin .jizzax iframe {
+    width: 170%;
+  }
+}
+@media (max-width: 670px) {
+  main .section__5 .uch__card {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  main .section2 .cardlar {
+    grid-template-columns: 1fr;
+    width: 70%;
+    margin: auto;
+  }
+  main .section__3 .card2 .card__21,
+  main .section__3 .card2 .card__22 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 580px) {
+  main .section__4 .sec__4 .buttonlar {
+    flex-direction: column;
+  }
+  main .section__4 .sec__4 .buttonlar .left {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 550px) {
+  main .section__4 .abo .maiin .jizzax iframe {
+    width: 150%;
+  }
+}
+@media (max-width: 500px) {
+  main .section__4 .ap-tab .ap-tab-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 495px) {
+  main .section__4 .abo .maiin .jizzax iframe {
+    width: 140%;
+  }
+}
+@media (max-width: 490px) {
+  main .section2 .cardlar {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 458px) {
+  main .section__4 .abo .maiin .jizzax .zomin .flekss {
+    flex-direction: column;
+    width: 100%;
+  }
+  main .section__4 .abo .maiin .jizzax .zomin .flekss button {
+    width: 100%;
+  }
+  main .section__4 .abo .maiin .jizzax iframe {
+    width: 120%;
+  }
+}
+@media (max-width: 450px) {
+  main .section1 .fleks h2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 400px) {
+  main .section__4 .ap-tab .ap-tab-list {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 397px) {
+  main .section__4 .abo .maiin .jizzax iframe {
+    width: 90%;
+  }
+}
+@media (max-width: 300px) {
+  main .section__4 .ap-tab .ap-tab-list {
+    grid-template-columns: 1fr;
+  }
+}/*# sourceMappingURL=home.css.map */

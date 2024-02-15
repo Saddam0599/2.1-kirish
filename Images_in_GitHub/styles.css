@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+.container{
+    width: 1533px;
+    height: 100%;
+    border: 2px dashed red;
+    background-color: aqua;
+}
+
+
+
+.header-navigation{
+    width: 1333px;
+    height: 72px;
+    border: 0.5px double;
+    margin: 0 auto;
+}

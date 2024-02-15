@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fetch Backend Data on Button Click</title>
+</head>
+<body>
+
+  <button id="getDataButton">Get Backend Data</button>
+  <div id="result"></div>
+
+  <script>
+    document.getElementById('getDataButton').addEventListener('click', function() {
+      // Make a fetch request to the backend API
+      fetch('https://cbu.uz/uz/arkhiv-kursov-valyut/json/')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Update the content of the 'result' div with the received data
+          const resultElement = document.getElementById('result');
+          resultElement.innerHTML = '<p>Backend Data:</p>' + JSON.stringify(data);
+        })
+        .catch(error => {
+          // Handle errors
+          console.error('Error fetching data:', error);
+        });
+    });
+  </script>
+
+</body>
+</html>
